@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+"configurations": [
+    {
+        "type": "aws-sam",
+        "request": "direct-invoke",
+        "name": "Invoke Multiplayer.js Lambda",
+        "invokeTarget": {
+            "target": "code",
+            "projectRoot": ".",
+            "lambdaHandler": "index.handler"
+        },
+        "lambda": {
+            "runtime": "nodejs12.x"
+        }
+    }
+]
+}
